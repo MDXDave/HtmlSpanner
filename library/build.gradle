@@ -22,5 +22,5 @@ android {
 
 dependencies {
     api 'net.sourceforge.htmlcleaner:htmlcleaner:2.22'
-    api 'com.osbcp.cssparser:cssparser:1.5'
+    api 'com.github.raisercostin:osbcp-css-parser:cssparser-1.7'
 }
