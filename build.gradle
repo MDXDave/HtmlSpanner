@@ -1,36 +1,20 @@
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0-beta05'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
         maven {
             url "http://repo.pageturner-reader.org"
         }
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
-    }
-}
-
-apply plugin: 'com.android.library'
-
-dependencies {
-    implementation 'net.sourceforge.htmlcleaner:htmlcleaner:2.22'
-    implementation 'com.osbcp.cssparser:cssparser:1.5'
-}
-
-android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
-
-    defaultConfig {
-        minSdkVersion 7
-        targetSdkVersion 28
-        versionCode 1
-        versionName "0.6"
-    }
-}
-
-android {
-    lintOptions {
-         abortOnError false
     }
 }

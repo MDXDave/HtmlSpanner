@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 28
+        versionCode 1
+        versionName "0.6"
+    }
+}
+
+android {
+    lintOptions {
+         abortOnError false
+    }
+}
+
+
+dependencies {
+    implementation 'net.sourceforge.htmlcleaner:htmlcleaner:2.22'
+    implementation 'com.osbcp.cssparser:cssparser:1.5'
+}
