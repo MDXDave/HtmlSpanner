@@ -21,6 +21,6 @@ android {
 
 
 dependencies {
-    implementation 'net.sourceforge.htmlcleaner:htmlcleaner:2.22'
-    implementation 'com.osbcp.cssparser:cssparser:1.5'
+    api 'net.sourceforge.htmlcleaner:htmlcleaner:2.22'
+    api 'com.osbcp.cssparser:cssparser:1.5'
 }
